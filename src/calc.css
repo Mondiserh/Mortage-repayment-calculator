@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{
+    --Lime: hsl(61, 70%, 52%);
+    --Red: hsl(4, 69%, 50%);
+    --White: hsl(0, 0%, 100%);
+    --Slate_100: hsl(202, 86%, 94%);
+    --Slate_300: hsl(203, 41%, 72%);
+    --Slate_500: hsl(200, 26%, 54%);
+    --Slate_700: hsl(200, 24%, 40%);
+    --Slate_900: hsl(202, 55%, 16%);
+    --lightgray: lightgray;
+    --gray:gray;
+
+}
+
+body{
+    background-color: var(--Slate_100);
+    height: 100vh;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.calculator{
+    display: flex;
+    width: 1000px;
+    background-color: var(--White);
+    margin: auto auto;
+}
+/* top banner Start */
+
+.top-banner{
+    display: flex;
+    justify-content: space-between;
+}
+.top-banner h1{
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--Slate_900);
+}
+
+.top-banner button{
+    text-decoration: underline;
+    color: var(--gray);
+
+}
+
+/* Top banner end here */
+
+/* calc input start here  */
+
+.calc_input{
+    width: 750px;
+    height: 500px;
+    margin: 20px 25px;
+}
+.amount{
+    border: var(--lightgray) solid 2px;
+    border-radius: 7px;
+     background-color:var(--Slate_100) ;
+}
+.amount:hover, .amount:focus{
+    border: var(--Lime) solid 2px;
+    border-radius: 7px;
+    background-color:var(--Lime);
+    color: var(--Slate_900);
+}
+
+.calc_input label{
+    display: block;
+    color:var(--gray);
+}
+.calc_input .rand{
+    font-weight: 900;
+    font-size: 25px;
+    padding: 0 10px 0 15px;
+    border-radius: 7px 0 0 7px ;
+}
+.calc_input input {
+
+    border-left: 0;
+    height: 40px;
+    width: 100%;
+    outline: 0;
+}
+
+
+#tabbed-content .panel{
+    display: none;
+    background-color: var(--Slate_900);
+    width: 450px;
+    border-bottom-left-radius: 70px ;
+    height: 100%;
+}
+
+#tabbed-content li {
+  display: inline-block;
+  padding: 10px 14px;
+  background: #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#tabbed-content .panel.active {
+  display: block;
+}
+

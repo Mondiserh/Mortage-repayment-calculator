@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./calc.css">
+  <script src="./Script.js"></script>
+  
+  <title>Mortgage repayment calculator</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+ <main class="calculator container">
+    <div class="calc_input">
+        <div class="top-banner">
+         <h1>Mortgage Calculator</h1>
+         <button>Clear All</button>
+        </div>
+    
+    
+    <label for="amount">Mortgage Amount</label>
+    <div class="flex amount">
+        <span class="rand">R</span>
+        <input type="text" name="amount" id="amount">
+    </div>
+
+    <label class="block" for="term">Mortgage Term</label>
+    <div class="flex">
+    
+    <div class="flex amount">
+        <input type="text" name="term" id="term"> 
+        <span class="rand">Years</span>
+    </div>    
+    </div>
+    
+   
+
+    <label for="interest">Interest Rate</label>
+     <div class="flex amount ">
+        <input type="text" name="interest" id="interest">
+        <span class="rand">%</span>
+    </div>
+    
+
+
+    <label for="mortgage_type">Mortgage Type</label>
+    <input type="radio" name="Repayment" id="payment">
+    <input type="radio" name="interest_Only" id="Interest_only">
+
+    <button class="calculate" type="submit">Calculate Repayments</button>
+    </div>
+     <div id="tabbed-content">
+        <ul class="tabs">
+          <li data-target="#about" class="active">Book 1</li>
+          <li data-target="#contact">Book 2</li>
+        </ul>
+        <div class="panel active" id="about">
+           <div class="empty">
+        <img src="../images/illustration-empty.svg" alt="">
+        <h3>Results shown here</h3>
+        <p>Complete the form and click “calculate repayments” to see what 
+             your monthly repayments would be.</p>
+     </div>
+        </div>
+        <div class="panel" id="contact">
+           <div class="completed">
+      <h3>Your results</h3>
+  <p>Your results are shown below based on the information you provided. 
+  To adjust the results, edit the form and click “calculate repayments” again.</p>
+    
+  <p>Your monthly repayments</p>
+  <label for="repayments">R0.00</label>
+
+  <P>Total you'll repay over the term</P>
+  </div>
+        </div>
+      </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
